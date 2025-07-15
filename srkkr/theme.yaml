@@ -1,0 +1,61 @@
+id: srkkr-base
+label: srkkr-base
+name: srkkr-base
+version: '1.0'
+author_link: https://sorakakeru.info/
+author_name: 宙駆ける
+class: both
+description: 自分用テーマ
+protected: 1
+thumbnail_file: 'thumb.png'
+thumbnail_file_medium: 'thumb-medium.png'
+thumbnail_file_small: 'thumb-small.png'
+elements: 
+  template_set: 
+    component: ~
+    data: 
+      base_path: templates
+      label: exported_template set
+      templates: 
+        index: 
+          main_index: 
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+          styles: 
+            label: CSS
+            outfile: _assets/css/style.css
+            rebuild_me: 0
+            build_type: 2
+          javascript: 
+            label: JavaScript
+            outfile: _assets/js/common.js
+            rebuild_me: 0
+            build_type: 2
+        module: 
+          template_conf: 
+            label: _定数設定ファイル
+          template_footer: 
+            label: _フッター
+          template_head: 
+            label: _head
+          template_headTitle: 
+            label: _headタイトル部分
+          template_header: 
+            label: _ヘッダー
+        system: 
+          cd_search_results: 
+            label: コンテンツの検索結果
+          comment_listing: 
+            label: コメント一覧
+          comment_preview: 
+            label: コメントプレビュー
+          comment_response: 
+            label: コメント完了
+          dynamic_error: 
+            label: ダイナミックパブリッシングエラー
+          popup_image: 
+            label: ポップアップ画像
+          search_results: 
+            label: 検索結果
+    importer: template_set

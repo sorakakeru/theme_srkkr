@@ -1,0 +1,37 @@
+<mt:SetVars>
+	<mt:If name="main_index">
+		template_type_custom=main_index
+	<mt:ElseIf name="datebased_archive">
+		template_type_custom=datebased_archive
+	<mt:ElseIf name="category_archive">
+		template_type_custom=category_archive
+	<mt:ElseIf name="entry_archive">
+		template_type_custom=entry_archive
+	<mt:ElseIf name="page_archive">
+		template_type_custom=page_archive
+	<mt:ElseIf name="contenttype_archive">
+		template_type_custom=contenttype_archive
+	<mt:ElseIf name="contenttype_archive_listing">
+		template_type_custom=contenttype_archive_listing
+	<mt:ElseIf name="search_results">
+		template_type_custom=search_results
+	</mt:If>
+</mt:SetVars>
+
+<mt:SetVars>
+  websiteURL=<mt:WebsiteURL>
+</mt:SetVars>
+
+<mt:SetVars>
+  websiteID=[num]
+
+  catID_*=[num]
+  catID_*=[num]
+  catID_*=[num]
+  folderID_*=[num]
+  folderID_*=[num]
+
+  contentID_*=[num]
+
+  contentCatID_*=[num]
+</mt:SetVars>
